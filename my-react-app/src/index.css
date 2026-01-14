@@ -1,0 +1,15 @@
+:root {
+  --bg-dark:  #22223b;
+  --bg-secondary: #4a4e69;
+  --text-muted: #9a8c98;
+  --bg-card: #c9ada7;
+  --text-light: #f2e9e4;
+}
+html {
+   scroll-behavior: smooth; 
+}
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
