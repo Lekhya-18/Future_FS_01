@@ -1,15 +1,113 @@
-:root {
-  --bg-dark:  #22223b;
-  --bg-secondary: #4a4e69;
-  --text-muted: #9a8c98;
-  --bg-card: #c9ada7;
-  --text-light: #f2e9e4;
-}
-html {
-   scroll-behavior: smooth; 
-}
-body {
+* {
   margin: 0;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-bg: #22223b;
+  --primary: #4a4e69;
+  --secondary: #9a8c98;
+  --accent: #c9ada7;
+  --light-bg: #f2e9e4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--light-bg);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+nav {
+  background-color: var(--primary);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+
+p {
+  color: var(--light-bg);
+  margin-bottom: 10px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: var(--secondary);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+
+#projects p {
+  background: var(--secondary);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--dark-bg);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: var(--light-bg);
+}
+
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
 }

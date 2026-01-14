@@ -1,9 +1,9 @@
-function Projects() {
+export default function Projects() {
   return (
     <section id="projects">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
+      <p>Portfolio Website</p>
+      <p>Quiz Application</p>
     </section>
   );
 }
-
-export default Projects;
