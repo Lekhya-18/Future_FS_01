@@ -12,7 +12,7 @@ export default function Skills() {
 
     <div className="skill-card">
       <h3>Web Technologies</h3>
-      <p>HTML, CSS, JavaScript</p>
+      <p>HTML, CSS, JavaScript, MySQL</p>
     </div>
 
     <div className="skill-card">
